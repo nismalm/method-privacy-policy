@@ -4,65 +4,109 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>METHOD - Privacy Policy</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1a1a1a; line-height: 1.6; }
-  h1 { font-size: 28px; margin-bottom: 4px; }
-  .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
-  h2 { font-size: 20px; margin-top: 36px; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 8px; }
-  a { color: #4d7a00; }
-  .contact { background: #f5f7ec; border-radius: 8px; padding: 16px 20px; margin-top: 12px; }
+  :root {
+    --accent: #e0fe66;
+    --bg: #040404;
+    --bg-card: #0d0d0d;
+    --bg-elevated: #161616;
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --text-muted: #6b6b6b;
+    --border: #1f1f1f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Barlow', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+  .brand img { height: 32px; width: auto; }
+  h1 { font-size: 30px; font-weight: 800; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .updated { color: var(--text-muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 19px; font-weight: 700; margin-top: 40px; margin-bottom: 12px; color: var(--accent); }
+  p { color: var(--text-secondary); margin: 0 0 14px; }
+  ul { padding-left: 20px; margin: 0 0 14px; color: var(--text-secondary); }
+  li { margin-bottom: 10px; }
+  strong { color: var(--text-primary); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  a:hover { text-decoration: underline; }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-top: 12px;
+  }
+  hr { border: none; border-top: 1px solid var(--border); margin: 40px 0 0; }
+  .footer { color: var(--text-muted); font-size: 13px; margin-top: 24px; text-align: center; }
 </style>
 </head>
 <body>
-  <h1>METHOD - Privacy Policy</h1>
-  <p class="updated">Last updated: September 17, 2026</p>
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo.png" alt="METHOD">
+    </div>
 
-  <p>This Privacy Policy describes how the METHOD mobile app ("METHOD", "we", "us") collects, uses, and protects information when you use the app as a client of your trainer.</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: September 17, 2026</p>
 
-  <h2>Who this applies to</h2>
-  <p>METHOD is provided to clients by their personal trainer. Access to the app is granted by your trainer, who issues you a login code and temporary password. This is not a public sign-up app.</p>
+    <p>This Privacy Policy describes how the METHOD mobile app ("METHOD", "we", "us") collects, uses, and protects information when you use the app as a client of your trainer.</p>
 
-  <h2>Information we collect</h2>
-  <ul>
-    <li><strong>Account information:</strong> your name, email address, and phone number, used to identify your account and communicate with you.</li>
-    <li><strong>Health and fitness data:</strong> workout logs (exercises, sets, reps, weights), body measurements, weight entries, and diet/meal logs, entered by you or your trainer, used solely to track your progress within the app.</li>
-    <li><strong>Photos:</strong> if you use the workout share card feature, any photo you pick or capture is used only to render that image on your device. It is not uploaded to or stored on our servers.</li>
-    <li><strong>Device push token:</strong> used to deliver notifications to your device (e.g. reminders).</li>
-  </ul>
+    <h2>Who this applies to</h2>
+    <p>METHOD is provided to clients by their personal trainer. Access to the app is granted by your trainer, who issues you a login code and temporary password. This is not a public sign-up app.</p>
 
-  <h2>How we use this information</h2>
-  <ul>
-    <li>To operate core app features: workout tracking, diet tracking, progress logging, and reminders.</li>
-    <li>To let your trainer view your logged progress and manage your program.</li>
-    <li>To send account-related and reminder notifications.</li>
-  </ul>
-  <p>We do not sell your personal data, and we do not use it for advertising or third-party tracking. METHOD does not integrate any advertising or analytics SDKs.</p>
+    <h2>Information we collect</h2>
+    <ul>
+      <li><strong>Account information:</strong> your name, email address, and phone number, used to identify your account and communicate with you.</li>
+      <li><strong>Health and fitness data:</strong> workout logs (exercises, sets, reps, weights), body measurements, weight entries, and diet/meal logs, entered by you or your trainer, used solely to track your progress within the app.</li>
+      <li><strong>Photos:</strong> if you use the workout share card feature, any photo you pick or capture is used only to render that image on your device. It is not uploaded to or stored on our servers.</li>
+      <li><strong>Device push token:</strong> used to deliver notifications to your device (e.g. reminders).</li>
+    </ul>
 
-  <h2>How we store and protect your information</h2>
-  <ul>
-    <li>Login credentials (access tokens) are stored securely on your device using the iOS Keychain or Android Keystore, never in plain text storage.</li>
-    <li>All communication between the app and our servers is encrypted in transit (HTTPS/TLS).</li>
-    <li>Your data is stored on our backend servers and is accessible only to you and the trainer who manages your program.</li>
-  </ul>
+    <h2>How we use this information</h2>
+    <ul>
+      <li>To operate core app features: workout tracking, diet tracking, progress logging, and reminders.</li>
+      <li>To let your trainer view your logged progress and manage your program.</li>
+      <li>To send account-related and reminder notifications.</li>
+    </ul>
+    <p>We do not sell your personal data, and we do not use it for advertising or third-party tracking. METHOD does not integrate any advertising or analytics SDKs.</p>
 
-  <h2>Data retention and deletion</h2>
-  <p>You can permanently delete your account and associated data at any time from within the app: <strong>Profile &gt; Danger Zone &gt; Delete Account</strong>. This action is irreversible.</p>
+    <h2>How we store and protect your information</h2>
+    <ul>
+      <li>Login credentials (access tokens) are stored securely on your device using the iOS Keychain or Android Keystore, never in plain text storage.</li>
+      <li>All communication between the app and our servers is encrypted in transit (HTTPS/TLS).</li>
+      <li>Your data is stored on our backend servers and is accessible only to you and the trainer who manages your program.</li>
+    </ul>
 
-  <h2>Your rights</h2>
-  <p>You may request access to, correction of, or deletion of your personal data by contacting us using the details below, or by using the in-app account deletion feature.</p>
+    <h2>Data retention and deletion</h2>
+    <p>You can permanently delete your account and associated data at any time from within the app: <strong>Profile &gt; Danger Zone &gt; Delete Account</strong>. This action is irreversible.</p>
 
-  <h2>Children's privacy</h2>
-  <p>METHOD is intended for use by adults working with a personal trainer and is not directed at children under 16.</p>
+    <h2>Your rights</h2>
+    <p>You may request access to, correction of, or deletion of your personal data by contacting us using the details below, or by using the in-app account deletion feature.</p>
 
-  <h2>Changes to this policy</h2>
-  <p>We may update this policy from time to time. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+    <h2>Children's privacy</h2>
+    <p>METHOD is intended for use by adults working with a personal trainer and is not directed at children under 16.</p>
 
-  <h2>Contact us</h2>
-  <div class="contact">
-    <p>If you have questions about this Privacy Policy or your data, contact us:</p>
-    <p>WhatsApp: <a href="https://wa.me/916238112119">+91 62381 12119</a></p>
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact us</h2>
+    <div class="card">
+      <p style="margin-bottom: 4px;">If you have questions about this Privacy Policy or your data, contact us:</p>
+      <p style="margin-bottom: 0;">WhatsApp: <a href="https://wa.me/916238112119">+91 62381 12119</a></p>
+    </div>
+
+    <hr>
+    <p class="footer">&copy; 2026 METHOD. All rights reserved.</p>
   </div>
 </body>
 </html>
